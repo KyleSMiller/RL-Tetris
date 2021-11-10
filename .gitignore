@@ -1,0 +1,4 @@
+.idea/
+__pycache__/
+src/nnet attempt 1/
+src/Tetris-DQN-master/gym_tetris/ai/logs/
