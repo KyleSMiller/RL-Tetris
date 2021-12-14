@@ -2,3 +2,8 @@
 __pycache__/
 src/nnet attempt 1/
 src/Tetris-DQN-master/gym_tetris/ai/logs/
+images/
+weights/
+src/Tetris-DQN-master/TabularAgents.py
+src/Tetris-DQN-master/run_train_tabular.py
+src/Tetris-DQN-master/trainTabularAgents.py

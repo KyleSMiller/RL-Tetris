@@ -349,7 +349,9 @@ class Board:
         return states
 
     def get_info(self, rows_cleared):
-        """Returns the state of the board using statistics.
+        """
+        Returns the state of the board using statistics.
+        Based off Dellacherie's algorithm
 
          0: Rows cleared
          1: Bumpiness
@@ -379,6 +381,7 @@ class Board:
             self.get_row_transitions(),
             self.get_column_transitions(),
             self.get_cumulative_wells(),
+            # include the following 2 lines for Dellacherie, exclude for EL-Tetris
             eroded_piece_cells,
             self.get_aggregate_height(),
         ]

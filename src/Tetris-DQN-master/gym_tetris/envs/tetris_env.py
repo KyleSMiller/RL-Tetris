@@ -54,6 +54,10 @@ class TetrisEnv(gym.Env):
             self.game.board.move_and_drop(x, rotation)
 
         rows = self.game.tick()
+        # simulate "reaction time." The agent is only fast enough to make an action every-other frame
+        # rows = self.game.tick()
+        # rows = self.game.tick()
+
         rows_count = len(rows)
         done = self.game.board.is_game_over()
 
